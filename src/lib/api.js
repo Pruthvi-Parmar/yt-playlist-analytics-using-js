@@ -1,4 +1,4 @@
-// This file replaces the Next.js API route with a client-side service
+
 
 export async function fetchPlaylistData(playlistUrl) {
     // Check if URL is valid

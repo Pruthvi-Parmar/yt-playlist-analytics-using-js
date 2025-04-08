@@ -1,10 +1,6 @@
 import { PlaywrightCrawler, Dataset } from "crawlee"
 import { v4 as uuidv4 } from "uuid"
 
-// This is adapted from the Next.js API route
-// In a Vite project, this would need to be a separate backend service
-// For demo purposes, we'll keep it here but it won't be used directly
-
 export async function scrapePlaylist(playlistUrl) {
   if (!playlistUrl) {
     throw new Error("Playlist URL is required")

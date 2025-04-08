@@ -1,9 +1,9 @@
-// Simplified version that doesn't require tailwind-merge
+
 export function cn(...inputs) {
   return inputs.filter(Boolean).join(" ")
 }
 
-// Format view counts for better display
+
 export function formatViews(views) {
   if (views >= 1000000) {
     return `${(views / 1000000).toFixed(1)}M`
@@ -14,7 +14,7 @@ export function formatViews(views) {
   }
 }
 
-// Check if the server is running
+
 export async function checkServerStatus() {
   try {
     const response = await fetch("/api/health")

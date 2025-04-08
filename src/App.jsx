@@ -1,4 +1,3 @@
-"use client"
 
 import { useState, useEffect } from "react"
 import { ThemeProvider } from "./components/theme-provider"
@@ -15,7 +14,7 @@ function App() {
   const [error, setError] = useState(null)
   const [serverStatus, setServerStatus] = useState({ checked: false, running: false, message: "" })
 
-  // Check server status on component mount
+
   useEffect(() => {
     const checkServer = async () => {
       const status = await checkServerStatus()

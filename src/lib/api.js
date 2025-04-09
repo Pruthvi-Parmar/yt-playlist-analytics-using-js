@@ -9,6 +9,8 @@ export async function fetchPlaylistData(playlistUrl) {
     console.log("Attempting to fetch playlist data:", playlistUrl)
   
     try {
+      console.log("From api.js :: ");
+      
       // Use a relative URL which will be handled by the Vite proxy
       const response = await fetch("/api/scrape-playlist", {
         method: "POST",

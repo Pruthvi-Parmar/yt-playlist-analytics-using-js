@@ -9,11 +9,12 @@
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
     "server": "node server.js",
-    "both":"concurrently \"npm run server\" \"npm run dev\""
+    "both": "concurrently \"npm run server\" \"npm run dev\""
   },
   "dependencies": {
     "@radix-ui/react-scroll-area": "^1.0.5",
     "@radix-ui/react-tabs": "^1.0.4",
+    "concurrently": "^9.1.2",
     "cors": "^2.8.5",
     "crawlee": "^3.0.0",
     "express": "^4.18.2",
